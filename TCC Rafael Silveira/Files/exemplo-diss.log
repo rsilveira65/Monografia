@@ -1,0 +1,485 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.7)  10 MAR 2015 11:37
+entering extended mode
+**exemplo-diss.tex
+(C:\Users\teste\Desktop\TCC\texufpel-v3\exemplo-diss.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(C:\Users\teste\Desktop\TCC\texufpel-v3\texufpel.cls
+
+
+ --------------------------------------------------
+ CLASSE texufpel
+ Formatação de Documentos LaTeX da UFPEL
+ --------------------------------------------------
+ Desenvolvida a partir da Classe IIUFRGS
+ por Marilton S. de Aguiar (marilton@inf.ufpel.edu.br)
+ --------------------------------------------------
+ Versão: 3/5/2014
+ --------------------------------------------------
+
+
+Document Class: texufpel 3/5/2014
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2008/07/08 v3.8m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\english.ldf"
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\portuges.ldf"
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+\l@brazilian = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lastpage\lastpage.sty"
+Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count89
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\chngcntr\chngcntr.sty"
+Package: chngcntr 2009/09/02 v1.0a change counter resetting
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count90
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count91
+\Gm@cntv=\count92
+\c@Gm@tempcnt=\count93
+\Gm@bindingoffset=\dimen104
+\Gm@wd@mp=\dimen105
+\Gm@odd@mp=\dimen106
+\Gm@even@mp=\dimen107
+\Gm@layoutwidth=\dimen108
+\Gm@layoutheight=\dimen109
+\Gm@layouthoffset=\dimen110
+\Gm@layoutvoffset=\dimen111
+\Gm@dimlist=\toks15
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+\c@ei@authorcount=\count94
+\c@ei@advisorcount=\count95
+\c@ei@coadvisorcount=\count96
+\c@ei@collaboratorcount=\count97
+\c@kwcounter=\count98
+\titlepagewinwidth=\skip45
+\titlepagewinheight=\skip46
+\titlepagewinvoffset=\skip47
+\ei@chapnumindent=\skip48
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+No file exemplo-diss.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 22.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 22.
+\AtBeginShipoutBox=\box26
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count99
+\scratchdimen=\dimen114
+\scratchbox=\box27
+\nofMPsegments=\count100
+\nofMParguments=\count101
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count102
+\MPscratchDim=\dimen115
+\MPnumerator=\count103
+\makeMPintoPDFobject=\count104
+\everyMPtoPDFconversion=\toks19
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 702.78308pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 27.
+<ufpelw.pdf, id=1, 258.96838pt x 261.97874pt>
+File: ufpelw.pdf Graphic file (type pdf)
+ <use ufpelw.pdf>
+Package pdftex.def Info: ufpelw.pdf used on input line 27.
+(pdftex.def)             Requested size: 85.35826pt x 86.34932pt.
+ [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/teste/Desktop/TC
+C/texufpel-v3/ufpelw.pdf>]
+Underfull \hbox (badness 1320) in paragraph at lines 27--27
+[]\OT1/phv/m/n/12 Disserta[][]ao apre-sen-tada ao Pro-grama de
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 27.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 27.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 27.
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 27--27
+[][] 
+ []
+
+[2] [2
+
+
+] [3
+
+] [4
+
+]
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <16> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 42.
+ [5
+
+] [6
+
+]
+
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 64.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+\OT1/phv/b/n/12 Palavras-chave: \OT1/phv/m/n/12 Palavrachave-um, palavrachave-d
+ois, palavrachave-tres,
+ []
+
+[7
+
+]
+
+LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 86.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
+[8
+
+
+]
+No file exemplo-diss.lof.
+\tf@lof=\write3
+[9
+
+]
+No file exemplo-diss.lot.
+\tf@lot=\write4
+[10
+
+] [11
+
+]
+No file exemplo-diss.toc.
+\tf@toc=\write5
+[12
+
+]
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 127.
+
+
+Package natbib Warning: Citation `Moore:1979:MAI' on page 13 undefined on input
+ line 147.
+
+
+Package natbib Warning: Citation `Aguiar:2005' on page 13 undefined on input li
+ne 147.
+
+
+Package natbib Warning: Citation `vonNeumann:1966:TSR' on page 13 undefined on 
+input line 157.
+
+
+LaTeX Warning: Reference `tabela' on page 13 undefined on input line 169.
+
+[13
+
+]
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 178.
+
+Overfull \hbox (7.54721pt too wide) in paragraph at lines 174--192
+ [] 
+ []
+
+[14]
+
+LaTeX Warning: Reference `tabela2' on page 15 undefined on input line 217.
+
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 237.
+
+LaTeX Warning: Reference `figura' on page 15 undefined on input line 237.
+
+
+Overfull \hbox (7.54721pt too wide) in paragraph at lines 222--240
+ [] 
+ []
+
+<figura.pdf, id=56, 735.74875pt x 801.99625pt>
+File: figura.pdf Graphic file (type pdf)
+ <use figura.pdf>
+Package pdftex.def Info: figura.pdf used on input line 244.
+(pdftex.def)             Requested size: 294.29428pt x 320.79282pt.
+ [15
+
+ <C:/Users/teste/Desktop/TCC/texufpel-v3/figura.pdf>] [16]
+No file exemplo-diss.bbl.
+[17
+
+] [18
+
+] [19
+
+]
+File: ufpelw.pdf Graphic file (type pdf)
+ <use ufpelw.pdf>
+Package pdftex.def Info: ufpelw.pdf used on input line 326.
+(pdftex.def)             Requested size: 28.45274pt x 28.78177pt.
+ <ufpel.pdf, id=82, 254.3904pt x 251.0178pt>
+File: ufpel.pdf Graphic file (type pdf)
+
+<use ufpel.pdf>
+Package pdftex.def Info: ufpel.pdf used on input line 326.
+(pdftex.def)             Requested size: 85.35826pt x 84.22649pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 326--326
+[][][] 
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 326--326
+[][][] 
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 326--326
+[][][] 
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 326--326
+[][][] 
+ []
+
+
+Package lastpage Warning: Rerun to get the references right on input line 328.
+
+
+AED: lastpage setting LastPage
+[20
+
+ <C:/Users/teste/Desktop/TCC/texufpel-v3/ufpel.pdf>]
+
+Package natbib Warning: There were undefined citations.
+
+(C:\Users\teste\Desktop\TCC\texufpel-v3\exemplo-diss.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3357 strings out of 493921
+ 45127 string characters out of 3144876
+ 119436 words of memory out of 3000000
+ 6599 multiletter control sequences out of 15000+200000
+ 21340 words of font info for 41 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 37i,13n,39p,242b,347s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on exemplo-diss.pdf (21 pages, 204952 bytes).
+PDF statistics:
+ 104 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,573 @@
+\documentclass[tcc,capa]{texufpel}
+
+\usepackage[latin1]{inputenc} % acentuacao
+\usepackage{graphicx} % para inserir figuras
+
+\unidade{Centro de Desenvolvimento Tecnológico}
+\curso{Engenharia de Computação}
+\nomecurso{Bacharelado em Engenharia de Computação}
+\titulocurso{Bacharel em Engenharia de Computação}
+
+\title{Desenvolvimento de uma Solução para o Registro de Presenças e Controle de Acesso em Eventos Acadêmicos Utilizando Identificação e Comunicação por Radiofrequência}
+
+\author{Silveira}{Rafael}
+\advisor[Prof.~Dr.]{Marques}{Felipe de Souza}
+\coadvisor[Prof.~Dr.]{Zatt}{Bruno}
+%\collaborator[Prof.~Dr.]{Aguiar}{Marilton Sanchotene de}
+
+\keyword{palavrachave-um}
+\keyword{palavrachave-dois}
+\keyword{palavrachave-tres}
+\keyword{palavrachave-quatro}
+
+\begin{document}
+
+%\renewcommand{\advisorname}{Orientadora}           %descomente caso tenhas orientadora
+%\renewcommand{\coadvisorname}{Coorientadora}      %descomente caso tenhas coorientadora
+
+\maketitle 
+
+\sloppy
+
+\fichacatalografica
+
+\folhadeaprovacao
+
+%Opcional
+\begin{dedicatoria}
+  Dedico esta conquista\ldots bla blabla blablabla bla. Bla blabla blablabla bla.\\
+  Bla blabla blablabla bla. Bla blabla blablabla bla.
+\end{dedicatoria}
+
+%Opcional
+\begin{agradecimentos}
+  Primeiramente, gostaria de agradecer a Deus, pois sem ele nada seria possível.
+  
+Agradeço a toda a minha família e minha namorada, por compreenderem a minha ausência 
+por conta da faculdade. 
+
+ Sou muito grato aos meus professores Leomar e Felipe, por confiarem em mim. Pois, se não tivessem oferecido a oportunidade da bolsa de Iniciação Ciêntifica, certamente não teria chego onde estou.
+
+Agradeço também, aos meus orientadores Felipe e Bruno Zatt, por me ajudarem e incentivarem desde o inicio deste trabalho de conclusão.
+
+A todos os meus amigos e colegas integrantes do PET Computação e GACI, com certeza sem eles tudo seria tão chato e muito mais difícil.
+
+Por fim, e não menos importante, gostaria de agradecer todos os meus amigos de São Lourenço do Sul, que de uma forma ou outra, contribuíram para que eu pudesse chegar aqui.
+\end{agradecimentos}
+
+%Opcional
+\begin{epigrafe}
+Eu acredito demais na sorte. E tenho constatado que, quanto mais duro eu trabalho, mais sorte eu tenho.
+ 
+\end{epigrafe}
+
+%Resumo em Portugues (no maximo 500 palavras)
+\begin{abstract}
+Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+
+Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.
+
+\end{abstract}
+
+\begin{englishabstract}%
+  {Titulo do Trabalho em Ingles}%
+  {keyword-one, keyword-two, keyword-three, keyword-four}
+  
+  Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+
+Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.
+
+\end{englishabstract}
+
+%Lista de Figuras
+\listoffigures
+
+%Lista de Tabelas
+\listoftables
+
+%lista de abreviaturas e siglas
+\begin{listofabbrv}{SPMD}
+        \item[SMP] Symmetric Multi-Processor
+        \item[NUMA] Non-Uniform Memory Access
+        \item[SIMD] Single Instruction Multiple Data
+        \item[SPMD] Single Program Multiple Data
+        \item[ABNT] Associação Brasileira de Normas Técnicas
+\end{listofabbrv}
+
+%Sumario
+\tableofcontents
+
+\chapter{Introdução}
+"Casa de ferreiro, espeto de pau"~  é um ditado popular usado quando uma pessoa quer salientar que alguém se comporta de maneira diferente da que é incentivada pelo seu próprio discurso. Este ditado popular se aplica perfeitamente à situação que vive a Computação UFPel.
+
+É comum que, em eventos acadêmicos, a presença dos participantes seja registrada de alguma forma com a finalidade de controle e emissão de certificados. Normalmente, essa necessidade gera alguns inconvenientes como atrasos, perda do registro e até mesmo burlagem do sistema.
+
+Na Universidade Federal de Pelotas, mais precisamente na Computação, os registros de presenças em eventos são gerados utilizando um leitor de código de barras, o que, na Semana Acadêmica de 2014, causou filas, atrasos, reclamações e a necessidade de uma pessoa para realizar a tarefa. O que posteriormente, resultou em um dos motivos da desistência de registro na edição do ano seguinte.
+
+No XXIII Congresso de Iniciação Científica (CIC) e XVI Encontro de Pós-Graduação (ENPOS), onde o controle foi feito via carimbo, houve a necessidade de um organizador por sala para o controle da presença e acesso, necessitando de, no mínimo, 20 organizadores especialmente selecionados para essa função. Além dos problemas salientados, atualmente soluções hardware/software não estão completamente difundidas em Pelotas e região, sendo que, as existentes, são extremamente caras.
+
+Visando solucionar esses problemas, este trabalho de conclusão de curso propõe uma solução de baixo custo, utilizando tecnologias inovadoras do mercado como: Identificação por radiofrequência (\textit{Radio-Frequency IDentification} - RFID) e comunicação sem fio usando padrão ZigBee. Para processar essas informações, foi desenvolvido um sistema Web com tecnologias atuais, tais como: PHP, HTML, CSS e banco de dados MySQL, o qual automatiza todo o processo desde a geração de boleto e processamento da presença ao desenvolvimento do certificado e envio ao participante via e-mail.
+
+
+
+
+\section{Motivação e Justificativa}
+	
+
+  A tecnologia de RFID consiste em um termo genérico para as tecnologias que utilizam a frequência de rádio para captura de dados de identificação. Contudo, existem várias outras opções para identificação automática de pessoas e objetos, como é o caso dos códigos de barras, identificação biométrica, por voz, QR code, etc. A vantagem do RFID é permitir a identificação automática de pessoas e objetos mas a distâncias consideráveis.
+
+ Quanto aos métodos de identificação, o mais comum é armazenar um número que identifique uma pessoa ou um objeto, ou outra informação, em um microchip. Tal tecnologia permite a captura automática de dados, para identificação de objetos com dispositivos eletrônicos, conhecidos como etiquetas eletrônicas, tags ou transponders, que emitem sinais de radiofrequência para leitores que captam estas informações.
+ 
+
+ 
+O leitor RFID consiste em um módulo transmissor e receptor e unidade de controle. Muitos deles possuem interfaces adicionais como RS 232 e RS 485 para a comunicação com outros sistemas como computadores e servidores \cite{finkenzeller1999rfid}. Como essa comunicação é feita apenas com cabos, uma das justificativas deste trabalho é o desenvolvimento de uma solução sem fio com o padrão Zigbee.
+
+O padrão Zigbee é um protocolo de comunicação por radiofrequência de baixo consumo de energia \cite{faludi2010building}, o qual pode ser implementado por componentes eletrônicos denominados Xbee, Garabee, etc. Pode-se implementar diversas topologias como: ponto-a-ponto, ponto-multiponto, mesh e peer-to-Peer. Dependendo do componente, pode ser feita uma comunicação de até 1500 metros de distância. Assim, torna-se possível a existência de diversos hardwares leitores de cartões RFID distantes entre si, enviando seus dados para um servidor local que esteja conectado à internet.
+
+Outra justificativa, de acordo com \cite{Sundaram:2010}, os dois elementos cruciais das ciber-infraestruturas do futuro, são Web Services e Identificação por radiofrequência. Existe uma necessidade de ligar esses elementos para desenvolver e-infraestruturas que permitam uma organização ser ágil e flexível . Além disso, especialistas em novidades da tecnologia afirmam que mais cedo ou mais tarde, dada a evolução do RFID, as etiquetas inteligentes estarão nos produtos que qualquer consumidor vier a comprar \cite{bernardo2004tecnologia}. 
+
+Porém, atualmente não existe um sistema eficiente para gestão de eventos que integre tanto hardware, quanto software em toda UFPel. Eventos acadêmicos como congressos e semanas acadêmicas, cada vez mais vem se tornando cansativos e inviáveis por conta de processos obsoletos de registro de presenças e controle de acesso. Problemas os quais poderão ser reduzidos com a automatização do processo com tecnologia RFID.
+
+
+
+\section{Metodologia}
+Este trabalho foi desenvolvido seguindo uma metodologia incremental de leitura, escrita, codificação, prototipação e teste. Em primeiro momento, foi feito um estudo teórico sobre os microcontroladores da Atmel pertencentes a família AVR, leitores RFID e comunicação sem fio via módulos Zigbee. Em um segundo momento, após o hardware ter sido definido, foram realizadas simulações do sistema eletrônico em ferramentas de CAD a fim de prever possíveis problemas no projeto. Só então, foram adquiridos os componentes e executados testes na protoboard e construção de uma placa de circuito impresso.
+
+Após completo domínio da área de hardware, iniciou-se o processo de modelagem sistema Web. Foi realizado o levantamento dos requisitos e modelagem usando Linguagem de Modelagem Unificada (\textit{Unified Modeling Language} - UML), a partir dos principais diagramas dessa metodologia, tais como: casos de uso, classes e sequência. Também foi desenvolvida a modelagem conceitual do banco de dados e desenvolvimento de código utilizando metodologia ágil com uma abordagem top-down e com auxílio de ferramenta de controle de versão.
+
+Ao final do trabalho de projeto, desenvolvimento e seu processo de revisão, o sistema foi validado na Semana Acadêmica da Computação a partir do uso de crachás com tecnologia RFID em cerca de 1/3 dos participantes do evento.
+
+Por fim, juntamente com o período que ocorreram as tarefas supracitadas, foram elaboradas as duas partes da monografia e resumos expandidos para o Sulpet, Ideias Inovadoras e CIC.
+\section{Trabalhos Relacionados}
+
+\section{Organização do Trabalho}
+
+Este trabalho esta organizado da seguinte forma: na seção dois serão abordados os conceitos e definições para melhor entendimento do trabalho. 
+Na terceira secão, serão discutidas as etapas do  desenvolvimento do Sistema Web.  	
+
+
+
+
+\chapter{Fundamentação Teórica}
+
+Para uma melhor compreensão, neste capítulo serão brevemente descritas capacidades e características das principais tecnologias que integram o hardware desenvolvido, e também conceitos sobre Engenharia de Software e linguagens de programação do Sistema Web. %A descrição das capacidades e características das tecnologias RFID, ZigBee e dos Microcontroladores em geral, e os principais conceitos sobre as linguagens e tecnologias Web, permitirá compreender melhor as suas vantagens e também as razões pelas quais foram adicionados em conjunto no desenvolvimento deste trabalho.
+
+
+
+
+\section{Sistema de Identificação por Radiofrequência}
+Normalmente, um sistema RFID é composto por três componentes: Transponder, Transcriver, e Middleware. Que estão demonstrados na Figura \ref{figura12}. (podem sofrer variações na nomeclatura de acordo com a preferência do autor).
+
+O Transceiver (leitor), que é composto por um leitor e uma antena, é responsável por emitir um campo elétromagnético (radiofrequência) que alimenta o transponder (etiqueta RFID), que por sua vez, responde enviando o dado armazenado em sua memória interna. Os dados obtidos do transponder, são encaminhados para os componentes do Middleware, que consistem em servidores ou computadores, conectados a algum sistema de banco de dados, onde é realizado o processamento de acordo com a aplicação em questão. 
+
+	%Entretanto, para um bom entendimento do funcionamento em "baixo nivel"~ dos sistemas RFID, se faz necessário o conhecimento de conceitos de física, como eletromagnetismo.
+	
+
+
+\begin{figure}[htbp]
+  \centering \includegraphics[scale=1]{rfid}
+\caption{Sistema RFID} 
+\label{figura12}
+\end{figure}
+
+\subsection{Transponder}
+%O transponder, também denominado como etiqueta (tag), é um dispositivo que contém a informação. Funciona como uma carteira de identidade, porém faz uso de dispositivos eletrônicos, tais como: memória, processador, resistores, capacitores e indutores (OLIVEIRA, 2010). 
+O transponder, também denominado como etiqueta (tag), é tipicamente composto externamente por um microchip, para armazenamento e computação, e uma antena para comunicação. A memória da tag pode ser de leitura apenas, de uma escrita e varias leituras ou totalmente regravável (MOTA,2006).
+
+Com a evolução da tecnologia, dependendo da aplicação alvo, os transponders podem possuir diversos formatos, tais como cartão/crachá para aplicações de controle de acesso e presença, etiquetas para aplicações de rastreamento de carga e até mesmo capsula de vidro para implantes sub-cutâneos, utilizada no rastreamento de animais domésticos (Figura 2.).
+\begin{figure}[htbp]
+  \centering \includegraphics[scale=0.5]{tiposrfid}
+\caption{Tipos de Etiquetas RFID} 
+\label{figura13}
+\end{figure}
+
+Além disso, o transponder pode ser classificado de acordo com sua forma de alimentação da seguinte maneira:
+
+\begin{itemize}
+\item Passiva: A etiqueta passíva é constituída por um CI e uma antena de resistência de metal ou carbono. Não possui fonte de alimentação própria. Portanto, a energia necessária para seu funcionamento é obtida do campo elétromagnético gerado pelo transponder. Possui a desvantagem de seu alcance ser limitado ao alcance do transponder. Por outro lado, por ser um circuito simples, possui baixo custo de produção e maior ciclo de vida util.
+
+\item Ativa: A etiqueta ativa, diferentemente das passivas, possui sua própria fonte de energia (bateria). Porém, necessita ser trocada após alguns anos. O alcance de sistemas que utilizam esse tipo de transponder pode chegar a alguns quilometros. 
+ 
+\item Semi-Passiva: Esse tipo de etiqueta é uma mistura das características ativa e passiva. Elas utilizam fontes de energia próprias para alimentar os circuitos que realizam funções lógicas, porém, a comunicação transcriver -transponder é feita com energia do campo eletromagnético. 
+
+\end{itemize}
+%utilizando autenticação com criptografia de baixo custo para segurança em identificação por radiofreqüência. 
+Conforme (MOTA,2006), outra forma de  classificação possível, é pela frequência de operação. São utilizadas frequências desde os 125 Khz aos 960 Mhz, que por sua vez são agrupadas em três grupos com diferentes características, como pode ser visto na Tabela  \ref{tabelaSintDSs}.
+\begin{table}[htbp]
+\begin{center}
+\caption{Frequência de operação, alcance e memória}\label{tabelaSintDSs}
+\begin{tabular}{|c|c|c|c}
+\hline
+\hline
+\textbf{Banda de Frequência} &  \textbf{Alcance} & \textbf{Memória}\\
+\hline
+\hline
+{\small {\textit{Low Frequency} - LF : 125 Khz - 134.2 Khz}} 	& {\small 10 cm} &{\small  672} \\
+\hline
+{\small {\textit{ High Frequency} - HF: 13.56 Mhz}} 			& {\small 30 cm}&{\small 643} \\
+\hline
+{\small {\textit{ Ultra High Frequency} - UHF: 433 Mhz - 960 Mhz}} 		& {\small mais de 100 m}&{\small 26}\\
+\hline
+
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\subsection{Transceiver}
+A função do transceiver (leitor) é saber comunicar-se com os transponders (etiquetas), em alguns casos processar informações, ou simplismente envia-las a outro sistema.
+Possue fonte de energia própria e capacidade de processamento. Além de apenas requisitar dados, o leitor pode ainda escrever dados nas etiquetas, se elas permitirem escrita.
+
+Conforme \citep{bernardo2004tecnologia} os transcrivers possuem três componentes físicos:
+ \begin{itemize}
+ \item Subsistema da antena: É pelo subsistema da antena que o transceiver obtém a informação do transponder. Normalmente, possuem apenas uma ou duas antenas quais são conectadas, ou em alguns casos podem ser internas.
+  \item Controlador do leitor: É responsável pelo controle do leitor. Este determina quando as informações lidas constituem um evento a ser enviado à rede. Eles podem variar em complexidade, desde um pequeno leitor embarcado em um celular, a um microcontrolador ou processador.
+  \item Interface de Rede: É a forma que as informações são transmitidas para outros sistemas. Pode ser feita de diversas maneiras, tais como: RS 232, RS 485, Bluetooth e Zigbee (maneira proposta).
+  \end{itemize}
+
+
+\subsection{Middleware}
+O \textit{middleware} é um software mediador. É responsável por pegar as informações obttidas do transceiver e transmiti-las para um sistema de controle de estoques ou vendas por exemplo. Permite que o programador mova informações entre o sistema RFID e sua base de dados, sem se preocupar com diferenças de protocolos de comunicação e interfaces de baixo nível.
+\subsection{Histórico}
+
+  %Como já referido no capitulo de introdução, 
+  
+ Atualmente, a tecnologia RFID pode ser encontrada em diversas soluções propostas na literatura: prateleiras inteligentes em farmácias \citep{wen2012application}, identificação de pacientes em hospitais \cite{chowdhury2007rfid}, bibliotecas inteligentes \cite{boss2003rfid}, pagamento automático em pedágios \cite{kalantri2014rfid}, identificação de animais \cite{voulodimos2010complete}, etc. Por outro lado, nem sempre serviu para fins de mercado. Os conceitos da tecnologia, como muitas outras, surgiram em torno do ano de 1945 para fins militares durante a segunda guerra mundial. 
+  
+Os alemães, possuíam radares para avisá-los com antecedência da aproximação de aviões enquanto eles ainda estavam bem distantes. O problema era identificar dentre esses aviões quais eram inimigos e quais eram aliados. Os alemães então descobriram que se os seus pilotos girassem seus aviões quando estivessem retornando à base iriam modificar o sinal de rádio que seria refletido de volta ao radar. Esse método simples alertava os técnicos responsáveis pelo radar que se tratava de aviões aliados (OLIVEIRA, 2010).
+
+Ja os Ingleses, de acordo com (RAMOS, 2007), desenvolveram o primeiro identificador ativo de amigo ou inimigo, chamado de  ( \textit{Identify Friend or Foe} - IFF), quando foi colocado um transmissor em cada avião britânico Figura \ref{figura}. Esses transmissores ao receber sinais das estações de radar no solo começavam a transmitir um sinal de resposta, que identificava o avião como amigo. Nascia assim, em um momento conturbado pela guerra, os principios da tecnologia de identificação por radiofrequência.
+
+Apenas no início da década de 70, a primeira patente de um sistema RFID foi registrada pelo americano Charles Walton. A ideia na época, era implantar a tecnologia no ramo automotivo para o destravamento de portas sem o uso de chaves.
+
+\begin{figure}[!htbp]
+  \centering \includegraphics[scale=1]{iff}
+\caption{Dispositivo IFF - Identify Friend or Foe} 
+\label{figura}
+\end{figure}
+A partir dos anos 80, o MIT (Instituto de Tecnologia de Massachussetts), em conjunto com outros centros de pesquisa da época, iniciou o estudo da tecnologia de radiofrequência para auxiliar no desenvolvimento de novas aplicações de rastreamento e localização de produtos. Dessa pesquisa, nasceu o EPC (Código Eletrônico de Produto). O EPC atualmente faz parte do ramo dos principais varejistas e fabricantes de produtos do mundo. Consiste em um número único gravado em uma tag RFID para identificar um item específico na cadeia de suprimentos (BRASIL,G.S,2013).
+ 
+Após cinquenta anos de evolução, em meados da década de 90, os sistemas de radiofrequência começaram a ser produzidos em larga escala, e consequentemente, conquistando parte do mercado mundial. Nos Estados Unidos, por exemplo, foram vastamente implantados em soluções de controle de pedágios e estacionamentos. Um marco histórico, surgiria naquela época em Oklahoma: A primeira auto-estrada com pagamento eletrônico automático.
+
+
+\section{O Padrão Zigbee}
+Hoje em dia, em aplicações industriais, cada vez mais se faz necessário o uso de sistemas de comunicação sem fio com consumo de energia reduzido, curto alcance e tamanho reduzido. Por conta disso, foi desenvolvido o padrão Zigbee, um protocolo simples e robusto, que utiliza rede chamada WPANs (Wireless Personal Area Networks).
+
+O grupo IEEE 802.15 é responsável pela padronização destes tipos de redes, este grupo definiu três classes WPANs que diferenciam de acordo com o consumo de bateria, débito binário e qualidade de serviço (Quality of Service - QoS).
+\begin{itemize}
+\item{802.15.3} São redes de elevado débito binário, destinam-se a aplicações multimídia que necessitem de QoS elevado. Algumas aplicações são ...
+\item{IEEE 802.15.1} Possuem débito binário médio, e são amplamente utilizadas em dispositivos móveis. Ex: Bluetooth.
+\item{IEEE 802.15.4} Também chamadas de redes LR-WPAN (\textit{Low Rate Wireless Personal Area Network}), são redes de baixo consumo binário e permitem o desenvolvimento de um conjunto de aplicações industriais \cite{egan2005emergence}, médicas \cite{jacob2011smart}, de automação residêncial \cite{gill2009zigbee}, dentre outras que possuam um consumo energético bastante reduzido.
+\end{itemize}
+
+Uma das características dos dispositivos que operam no padrão IEEE 802.15.4, é poder entrar em um estado de espera (sleep), que proporciona uma economia de energia essencial para dispositivos alimentados por baterias. Neste estado de sleep, o dispositivo
+escuta o meio periodicamente para determinar se a uma mensagem pendente, podendo desligar (diminuir o duty cycle) durante o período em que não escuta o meio. Com isso, é possível, dependendo da aplicação, escolher entre baixo consumo de energia ou uma baixa latencia (IEEE, 2006).
+
+Assim, o protocolo ZigBee surge como complemento à este padrão, uniformizando e garantindo confiabilidade e segurança, bem como um baixo consumo energético e baixo custo (ESCHNER, 2011).
+Foi desenvolvido em 2001 pelo grupo de empresas Aliance, porém tornou-se disponível no mercado apenas em Junho de 2005. Sua arquitetura é constituida por blocos ou camadas, onde cada camada possui entidades que executam serviços para servir a camada de nível superior. A Figura x apresenta uma ilustração destas camadas.
+\begin{figure}[!htbp]
+  \centering \includegraphics[scale=1]{camadas}
+\caption{Camadas Zigbee} 
+\label{figura22	}
+\end{figure}
+
+A camada de...
+
+\subsection{Topologias de Rede}
+\subsection{Funcionamento}
+
+
+\section{Microcontroladores}
+Há diversos conceitos sobre microcontrolador na literatura. De acordo com (FULANO,2011), um microcontrolador nada mais é que...
+Por outro lado, (CICLANO,2010) afirma que
+
+%\section{Cloud Computing and internet of things}
+%Cloud computing is the tecnology of sharing the resource adn data colection through the internet with users and it can be seflservice over the network acess. (Colud Computing,the fifth)
+
+
+
+\section{Linguagens de Desenvolvimento Web}
+\subsection{HTML5}
+\subsection{PHP}
+\subsection{MySQL}
+\subsection{Java Script}
+\section{Engenharia de Software}
+\subsection{Metodologia Ágil}
+\subsection{UML}
+A parte mais difícil do desenvolvimento de um sistema é a modelagem do mesmo (KRUCHTEN, 2004). Logo, é imprescindível que se utilizem técnicas e ferramentas
+corretas para facilitar este desenvolvimento, e também para que o sistema, quando completado, atenda às necessidades do cliente.
+\chapter{SISGE: UM SISTEMA PARA GESTÃO DE EVENTOS ACADÊMICOS}
+Neste capitulo, será discutida a metedologia, detalhes de implementação, projeto e testes do sistema desenvolvido.
+Portanto, o esboço do cenário o qual se insere o SISGE torna-se imprencindivel para o entendimento do trabalho. 
+
+Como pode ser observado na imagem  Figura x, qualquer dispositivo leitor RFID com alguuma forma acesso à Internet, pode comunicar-se com a API do sistema. Contudo, para uma maior segurança, o mesmo deve possuir uma chave única gerada préviamente pelo gerenciador do Sistema Web.
+Há também a possibilidade do uso de topologias de rede Zigbee, como ponto-multiponto, para o envio dos dados de diversos leitores distantes entre si, para um servidor local conectado à internet.
+\begin{figure}[htbp]
+
+ \centering \includegraphics[scale=0.6]{sistema}
+\caption{Esboço Cenário SISGE} 
+\label{figura16}
+\end{figure}
+
+%\section{Especificação do Sistema}
+\section{Metodologia de Desenvolvimento do Sistema}
+Para o desenvolvimento do sistema, o mesmo foi dividido em três partes distintas: Software, Middleware e Hardware. Que estão ilustrados na  Figura3. 
+
+ O \textbf{Software}, consiste em todo código feito para rodar no servidor web. Incluindo Banco de Dados, Sistema Web e API. Foi empregada a metodologia ágil de desenvolvimento iterativo e incremental SCRUM, onde primeiramente foi feita uma analise de requisitos.  Decidido os requisitos do sistema (que serão discutidos no decorrer deste trabalho), foi então realizada a modelagem UML com o uso da ferramenta Astah, um ambiente de modelagem  com licença gratuita para estudantes, de fácil instalacão e configuração. 
+ 
+Após a fase de modelagem, iniciou-se a fase de codificação. Foram realizados um total de vinte \textit{Sprints} de duração de uma semana cada, onde cada um era referente a implementação e teste de uma funcionalidade distinta do sistema.  Para manter um histórico de versões, foi utilizada a ferramenta de controle de versão Git, um sistema de gerenciamento de código fonte, com ênfase em velocidade.
+
+  Concluida as fases de modelagem, desenvolvimento e testes do software; iniciou-se a fase do projeto de Hardware, desenvolvimento e testes da placa eletrônica responsável pela aquisição dos dados contidos nos crachás RFID. Então, com o auxílio do software de CAD Eagle, foi montado todo o circuito e realizado testes de consistencia do sistema eletrônico. 
+
+Enfim, após o periodo de testes em ferramenta de CAD, iniciou-se a programação do microcontrolador, configuração dos módulos Zigbees, montagem e por fim, simulação do protótipo na protoboard.
+
+O meio de comunicação entre Hardware e Software, foi denominado \textbf{Middleware}. Nele está contido o módulo receptor Zigbee, e software do servidor local.
+ Para o seu funcionamento, é necessário um servidor Ubuntu conectado a internet, rodando um software na linguagem python, que lê a entrada USB onde se encontra o dispositivo zigbee e comunica-se com a Interface de Programação de Aplicativos (Aplication Programming Interface - API) do Sistema Web.
+ 
+
+
+
+
+\begin{figure}[htbp]
+  \centering \includegraphics[scale=0.5]{diagramablocos}
+\caption{Diagrama de Blocos do Sistema} 
+\label{figura12}
+\end{figure}
+
+\subsection{Análise de Requisitos}
+
+O objetivo desse sistema é servir como uma ferramenta de gestão para eventos acadêmicos, auxiliando na criação e gestão de semanas acadêmicas e congressos, principalmente da Computação UFPel.
+
+Portanto, a análise dos requisitos foi feita baseada nos resultados obtidos no formulário de \textit{feedback} da XVI SACOMP (18ª Semana Academica da Computação)  Tabela 1., que foi respondido por grande parte dos participantes e organizadores logo após o término do evento.
+Observou-se que o sistema deveria ser robusto, seguro...
+
+O SISGE trata-se de um sistema com acesso totalmente restrito. Para acessa-lo, o usuário deverá ser previamente cadastrado por um Organizador com a configuração "organizador"~ou "participante comum".  O organizador, possui as funções de cadastrar novas palestras,  participantes, hardware RFID, patrocinadores, gerar boletos e certificados, enviar emails, "curtir" palestras, visualizar gráficos, notícias da Computação e logs. Diferentemente do usuário participante comum que tem acesso limitado e apenas pode curtir e visualizar informações das palestras e suas presenças.
+\begin{figure}[htbp]
+  \centering \includegraphics[scale=0.8]{tabela2}
+%\caption{FeedBack - 18ª SACOMP} 
+\label{figura}
+\end{figure}
+
+\subsection{Diagramas de Casos de Uso}
+Idetificação dos atores:
+
+Ator é qualquer entidade externa que de alguma forma interaja com a aplicação, seja ele uma pessoa, equipamento ou outro sistema computacional. Atores definem papeis que os usuários podem fazer (BOOCH et al, 1999). 
+
+Com base em uma análise detalhada do Cenário, chegou-se a definição dos atores descritos a seguir:
+
+Organizador: Faz parte da organização do evento e possui acesso a todas funcionalidades do sistema.
+
+Participante: Inclui palestrantes, participantes e patrocinadores do evento, tem acesso limitado a apenas funcionalidades básicas.\\\\\\\
+
+\begin{figure}[htbp]
+  \centering \includegraphics[scale=0.6]{diagramacasouso}
+\caption{Diagrama de casos de uso para usuarios tipo Organizador}
+\label{figura16}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering \includegraphics[scale=0.7]{diagramacaso}
+\caption{Diagrama de casos de uso para usuarios tipo Participante}
+\label{figura17}
+\end{figure}
+
+\subsection{Descrição dos Casos de Uso}
+  Aqui se encontram as descrições dos casos de uso do SISGE.  Alguns dos fluxos básicos são acompanhados de um diagrama de sequência e/ou imagem da tela do sistema. Além disso, para um melhor entendimento do trabalho, alguns casos de uso semelhantes foram agrupados em uma úníca descrição.\\
+  
+  
+\textbf{1. Efetuar Login}
+
+\textbf{Ator:} Qualquer usuário do sistema.
+
+\textbf{Pré-Requisitos:} O usuário deve estar cadastrado no sistema.
+
+\textbf{Finalidade:} Permitir acesso ao sistema apenas de pessoas autorizadas.
+
+\textbf{Fluxo Básico: }
+\begin{enumerate}
+\item O usuário acessa a página inicial do sistema, preenche os campos de usuário e senha, depois clica em entrar;
+\item  O sistema valida os dados fornecidos pelo usuário a partir do banco de dados, se estiverem corretos, exibe a página inicial do sistema de acordo com seu tipo de usuário. Caso contrário, exibe mensagem de erro.
+
+\end{enumerate}
+
+
+
+
+
+
+
+\textbf{2. Efetuar Logout}
+
+\textbf{Ator:} 
+Qualquer usuário do sistema.
+
+\textbf{Pré-Requisitos:} O usuário deve estar cadastrado e logado no sistema.
+
+\textbf{Finalidade:} Permitir encerramento do sistema.
+
+\textbf{Fluxo Básico:} 
+\begin{enumerate}
+\item O usuário encerra suas atividades no sistema clicando na opção "Sair";
+\item O sistema finaliza a sessão do usuário e exibe a página de login.
+
+\end{enumerate}
+
+
+
+
+\textbf{3. Visualizar palestras cadastradas no evento}
+
+\textbf{Ator:} Qualquer usuário do sistema.
+
+\textbf{Pré-Requisitos:} O usuário deve estar cadastrado e logado no sistema.
+
+\textbf{Finalidade:} Permitir ao usuário visualizar as palestras cadastradas e suas respectivas datas, horários e "likes/unlikes". Também é possível saber qual palestra está em andamento.
+
+\textbf{Fluxo Básico: }
+\begin{enumerate}
+\item O usuário efetua o login no sistema;
+\item O sistema exibe a página principal onde se encontra a tabela.
+
+\end{enumerate}
+
+\begin{figure}[htbp]
+  \centering \includegraphics[scale=0.4]{tela1}
+\caption{Tela inicial do sistema exibindo informações de palestras}
+\label{figura19}
+\end{figure}
+
+
+\textbf{4. Cadastrar, excluir e editar nova palestra}
+
+\textbf{Ator:} Apenas usuários Organizadores
+
+\textbf{Pré-Requisitos:} O usuário deve estar cadastrado e logado no sistema como Organizador.
+
+\textbf{Finalidade:} Permitir ao usuário cadastrar, editar ou excluir novas palestras. 
+
+\textbf{Fluxo Básico: }
+
+\begin{enumerate}
+\item O usuário efetua o login no sistema;
+\item  Acessa o menu "Palestras";
+\item O sistema exibe a tela "Palestras" onde se encontra uma tabela com todas palestras cadastradas e opções para edita-las e excluí-las.
+\item O usuário clica no botão "Cadastra palestra", "Editar palestra" ou "Excluir palestra";
+\item Caso for cadastrar ou editar, o sistema exibe o formulário de cadastro de palestras ou de edição. Caso for excluir, o sistema exclui a palestra do banco de dados;
+\item O usuário preenche os campos do formulário com os dados da nova palestra ou os campos que queira editar (caso tenha clicado no botão Editar), e por fim, clica no botão "Salvar";
+\item O sistema valida os dados inseridos pelo usuário e se não houver inconsistências, insere/edita no banco de dados a palestra e exibe uma mensagem indicando sucesso na operação.
+
+\end{enumerate}
+
+
+\begin{figure}[htbp]
+  \centering \includegraphics[scale=1]{diagramaseq1}
+\caption{Diagrama de sequência Caso de Uso "Cadastrar nova palestra".}
+\label{figura18}
+\end{figure}
+
+
+\subsection{Modelagem do Banco de Dados}
+ Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+
+Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.
+\begin{figure}[htbp]
+  \centering \includegraphics[scale=0.7]{diagramabd}
+\caption{Diagrama do BD}
+\label{figura18}
+\end{figure}
+\section{Desenvolvimento do Software}
+\subsection{API}
+\begin{figure}[htbp]
+ \centering \includegraphics[scale=0.7	]{apifluxograma}
+\caption{Fluxograma da API} 
+\label{figura20}
+\end{figure}
+\subsection{Indicadores}
+\subsection{Certificados}
+
+
+\subsection{Like/Unlikes}
+\section{Desenvolvimento do Hardware}
+%\subsection{Especificação dos Componentes Eletrônicos}
+\subsection{Microcontrolador Atmel Atmega 328 PU}
+\subsubsection{Programação}
+\subsection{Módulo Garabee}
+\subsubsection{Configuração}
+\subsection{Leitor RFID}
+\subsection{Outros Componentes}
+O lema da indústria de semicondutores tem sido diminuir, baratear e melhorar. Fabricantes conseguiram nestes últimos anos atingir estas metas ao diminuir o tamanho dos transístores que compõe estes semicondutores. Esta diminuição tem uma consequência interessante: a diminuição do tamanho tem como consequência uma redução da tensão de operação destes transistores. Por isto, não tem sido raro encontrar novas tecnologias que funcionem apenas com 3.3V ou menos.
+
+Como por exemplo, neste trabalho: onde o o módulo Garabee e  leitor RFID devem ser alimentados com uma tensão de 3,3V e o microcontrolador e restante do circuito com no mínimo 5V.
+
+É para casos como este que é necessário empregar os circuitos tradutores de nível (level translators). Muitos fabricantes disponibilizam circuitos integrados dedicados a este fim. Mas por uma questão de custo e área da placa, neste trabalho, foi utilizado a técnica de divisão de tensão.
+
+ 
+\subsection{Análise do Consumo Energético}
+
+\chapter{Resultados}
+\chapter{Considerações Finais}
+%Metodologia de desenvolvimento
+%desenvolvimento do sw
+%desenvolvimento Hw
+
+
+
+
+
+% Bibliografia
+% http://liinwww.ira.uka.de/bibliography/index.html
+% um site que cataloga no formato bibtex a bibliografia em computacao
+%\bibliography{bibliografia.bib} (sem extensao)
+%\bibliographystyle{formato.bst} (sem extensao)
+
+\bibliography{bibliografia}
+
+ESCHNER, Rodrigo Hommerding. Sistema de automação residencial baseado em sensores ZigBee. 2011.
+\bibliographystyle{abnt}
+
+% Anexos (Opcional)
+\annex 
+\chapter{Aplicativo para testes}
+
+  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla
+  bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla
+  blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla
+  blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.
+  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla
+  bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla
+  blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla
+  blabla blablabla bla.  Bla blabla blablabla bla.
+
+  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla
+  bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla
+  blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla
+  blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.
+  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla
+  bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla
+  blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla
+  blabla blablabla bla.  Bla blabla blablabla bla.
+
+\chapter{Hardware com Plataforma Intel Galileo}
+
+  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla
+  bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla
+  blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla
+  blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.
+  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla
+  bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla
+  blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla
+  blabla blablabla bla.  Bla blabla blablabla bla.
+
+  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla
+  bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla
+  blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla
+  blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.
+  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla
+  bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla blabla
+  blablabla bla.  Bla blabla blablabla bla.  Bla blabla blablabla bla.  Bla
+  blabla blablabla bla.  Bla blabla blablabla bla.~\cite{Cormen}
+
+%Faz a capa do CDROM
+\makecover
+
+\end{document}
+

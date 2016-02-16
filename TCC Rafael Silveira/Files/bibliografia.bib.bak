@@ -1,0 +1,117 @@
+
+@Article{Sundaram:2010,
+  title={Knowledge-based RFID enabled Web Service architecture for supply chain management},
+  author={Sundaram, David and Zhou, Wei and Piramuthu, Selwyn and Pienaar, Schalk},
+  journal={Expert Systems with Applications},
+  volume={37},
+  number={12},
+  pages={7937--7946},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@article{bernardo2004tecnologia,
+  title={A tecnologia RFID e os benef{\'\i}cios da etiqueta inteligente para os neg{\'o}cios},
+  author={Bernardo, Cl{\'a}udio Gon{\c{c}}alves},
+  journal={Revista Eletr{\^o}nica Unibero de Inicia{\c{c}}{\~a}o Cient{\'\i}fica, S{\~a}o Paulo},
+  year={2004}
+}
+@book{finkenzeller1999rfid,
+  title={RFID Handbook: Radio-frequency identification fundamentals and applications},
+  author={Finkenzeller, Klaus},
+  year={1999},
+  publisher={Wiley}
+}
+@article{wen2012application,
+  title={Application of Smart Shelves in Drug Storage of Our Hospital},
+  author={WEN, Xiao-xu and FENG, Duan-hao and ZHAO, Guan-ren},
+  journal={China Pharmacy},
+  volume={45},
+  pages={013},
+  year={2012}
+}
+@article{egan2005emergence,
+  title={The Emergence of ZigBee in building automation and industrial controls},
+  author={Egan, David},
+  journal={Computing and Control Engineering},
+  volume={16},
+  number={2},
+  pages={14--19},
+  year={2005},
+  publisher={IET}
+}
+@article{gill2009zigbee,
+  title={A zigbee-based home automation system},
+  author={Gill, Khusvinder and Yang, Shuang-Hua and Yao, Fang and Lu, Xin},
+  journal={Consumer Electronics, IEEE Transactions on},
+  volume={55},
+  number={2},
+  pages={422--430},
+  year={2009},
+  publisher={IEEE}
+}
+@inproceedings{jacob2011smart,
+  title={Smart hospital using RFID and ZigBee technology},
+  author={Jacob, N and Reddy, KTV},
+  booktitle={Proceedings of the International Conference \& Workshop on Emerging Trends in Technology},
+  pages={987--989},
+  year={2011},
+  organization={ACM}
+}
+
+@inproceedings{chowdhury2007rfid,
+  title={RFID-based hospital real-time patient management system},
+  author={Chowdhury, Belal and Khosla, Rajiv},
+  booktitle={Computer and Information Science, 2007. ICIS 2007. 6th IEEE/ACIS International Conference on},
+  pages={363--368},
+  year={2007},
+  organization={IEEE}
+}
+@article{kalantri2014rfid,
+  title={RFID Based Toll Collection System.},
+  author={Kalantri, Rakhi and Parekar, Anand and Mohite, Akshay and Kankapurkar, Rohan},
+  journal={International Journal of Computer Science \& Information Technologies},
+  volume={5},
+  number={2},
+  year={2014}
+}
+@book{boss2003rfid,
+  title={RFID technology for libraries},
+  author={Boss, Richard W and American Library Association and others},
+  year={2003},
+  publisher={American Library Association}
+}
+@article{voulodimos2010complete,
+  title={A complete farm management system based on animal identification using RFID technology},
+  author={Voulodimos, Athanasios S and Patrikakis, Charalampos Z and Sideridis, Alexander B and Ntafis, Vasileios A and Xylouri, Eftychia M},
+  journal={Computers and Electronics in Agriculture},
+  volume={70},
+  number={2},
+  pages={380--388},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@book{faludi2010building,
+  title={Building wireless sensor networks: with ZigBee, XBee, arduino, and processing},
+  author={Faludi, Robert},
+  year={2010},
+  publisher={" O'Reilly Media, Inc."}
+}
+
+%@article{oliveira2010estudo,
+  %title={Estudo da tecnologia de identifica{\c{c}}{\~a}o por radiofreq{\"u}{\^e}ncia-RFID},
+  %author={Oliveira, Alessandro de Souza and Pereira, Milene Franco},
+  %year={2010}
+%}
+
+%@article{landt2005history,
+ % title={The history of RFID},
+ % author={Landt, Jeremy},
+ % journal={Potentials, IEEE},
+ % volume={24},
+ % number={4},
+ % pages={8--11},
+ % year={2005},
+%  publisher={IEEE}
+%}

@@ -1,0 +1,51 @@
+\select@language {brazilian}
+\select@language {english}
+\select@language {brazilian}
+\contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{14}
+\contentsline {section}{\numberline {1.1}Motiva\c c\~ao e Justificativa}{15}
+\contentsline {section}{\numberline {1.2}Metodologia}{16}
+\contentsline {section}{\numberline {1.3}Solu\c c\~oes Existentes no Mercado}{16}
+\contentsline {section}{\numberline {1.4}Organiza\c c\~ao do Trabalho}{17}
+\contentsline {chapter}{\numberline {2}Fundamenta\c c\~ao Te\'orica}{18}
+\contentsline {section}{\numberline {2.1}Sistema de Identifica\c c\~ao por Radiofrequ\^encia}{18}
+\contentsline {subsection}{\numberline {2.1.1}Transponder}{18}
+\contentsline {subsection}{\numberline {2.1.2}Transceiver}{20}
+\contentsline {subsection}{\numberline {2.1.3}Middleware}{21}
+\contentsline {subsection}{\numberline {2.1.4}Hist\'orico}{21}
+\contentsline {section}{\numberline {2.2}O Padr\~ao Zigbee}{22}
+\contentsline {subsection}{\numberline {2.2.1}Topologias de Rede}{23}
+\contentsline {subsection}{\numberline {2.2.2}Funcionamento}{23}
+\contentsline {section}{\numberline {2.3}Microcontroladores}{23}
+\contentsline {section}{\numberline {2.4}Linguagens de Desenvolvimento Web}{24}
+\contentsline {subsection}{\numberline {2.4.1}HTML5}{24}
+\contentsline {subsection}{\numberline {2.4.2}PHP}{24}
+\contentsline {subsection}{\numberline {2.4.3}MySQL}{24}
+\contentsline {subsection}{\numberline {2.4.4}Java Script}{24}
+\contentsline {section}{\numberline {2.5}Engenharia de Software}{24}
+\contentsline {subsection}{\numberline {2.5.1}Metodologia \'Agil}{24}
+\contentsline {subsection}{\numberline {2.5.2}UML}{24}
+\contentsline {chapter}{\numberline {3}SISGE: UM SISTEMA PARA GEST\~AO DE EVENTOS ACAD\^EMICOS}{25}
+\contentsline {section}{\numberline {3.1}Metodologia de Desenvolvimento do Sistema}{25}
+\contentsline {subsection}{\numberline {3.1.1}An\'alise de Requisitos}{27}
+\contentsline {subsection}{\numberline {3.1.2}Diagramas de Casos de Uso}{27}
+\contentsline {subsection}{\numberline {3.1.3}Descri\c c\~ao dos Casos de Uso}{28}
+\contentsline {subsection}{\numberline {3.1.4}Modelagem do Banco de Dados}{31}
+\contentsline {section}{\numberline {3.2}Desenvolvimento do Software}{33}
+\contentsline {subsection}{\numberline {3.2.1}API}{33}
+\contentsline {subsection}{\numberline {3.2.2}Indicadores}{34}
+\contentsline {subsection}{\numberline {3.2.3}Certificados}{34}
+\contentsline {subsection}{\numberline {3.2.4}Like/Unlikes}{34}
+\contentsline {section}{\numberline {3.3}Desenvolvimento do Hardware}{34}
+\contentsline {subsection}{\numberline {3.3.1}Microcontrolador Atmel Atmega 328 PU}{34}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Programa\c c\~ao}{34}
+\contentsline {subsection}{\numberline {3.3.2}M\'odulo Garabee}{34}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Configura\c c\~ao}{34}
+\contentsline {subsection}{\numberline {3.3.3}Leitor RFID}{34}
+\contentsline {subsection}{\numberline {3.3.4}Outros Componentes}{34}
+\contentsline {subsection}{\numberline {3.3.5}An\'alise do Consumo Energ\'etico}{34}
+\contentsline {chapter}{\numberline {4}Resultados}{35}
+\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{36}
+\contentsline {chapter}{Refer{\^e}ncias}{37}
+\setbox \@tempboxa \hbox {{{\sffamily \textbf {\MakeUppercase {Anexo} }}}}\ei@chapnumindent \wd \@tempboxa \setbox \@tempboxa \box \voidb@x \advance \ei@chapnumindent 1.8em\relax 
+\contentsline {chapter}{\numberline {\MakeUppercase {Anexo} A}Aplicativo para testes}{39}
+\contentsline {chapter}{\numberline {\MakeUppercase {Anexo} B}Hardware com Plataforma Intel Galileo}{40}

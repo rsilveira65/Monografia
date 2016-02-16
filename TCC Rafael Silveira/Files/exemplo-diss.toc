@@ -1,0 +1,12 @@
+\select@language {brazilian}
+\select@language {english}
+\select@language {brazilian}
+\contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{13}
+\contentsline {section}{\numberline {1.1}Uma subse\c c\~ao}{13}
+\contentsline {section}{\numberline {1.2}Outra se\c c\~ao}{13}
+\contentsline {subsection}{\numberline {1.2.1}Uma subse\c c\~ao}{14}
+\contentsline {chapter}{\numberline {2}Desenvolvimento}{15}
+\contentsline {chapter}{\numberline {3}Conclus\~ao}{17}
+\setbox \@tempboxa \hbox {{{\sffamily \textbf {\MakeUppercase {Anexo} }}}}\ei@chapnumindent \wd \@tempboxa \setbox \@tempboxa \box \voidb@x \advance \ei@chapnumindent 1.8em\relax 
+\contentsline {chapter}{\numberline {\MakeUppercase {Anexo} A}Um Anexo}{18}
+\contentsline {chapter}{\numberline {\MakeUppercase {Anexo} B}Outro Anexo}{19}

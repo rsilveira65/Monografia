@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: tcc2.aux
+The style file: abnt.bst
+Database file #1: bibliografia.bib
+You're missing a field name---line 103 of file bibliografia.bib
+ :   
+ :   %title={Estudo da tecnologia de identifica{\c{c}}{\~a}o por radiofreq{\"u}{\^e}ncia-RFID},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 109 of file bibliografia.bib
+ :  
+ :  % title={The history of RFID},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Cormen"
+You've used 12 entries,
+            2334 wiz_defined-function locations,
+            646 strings with 6351 characters,
+and the built_in function-call counts, 9268 in all, are:
+= -- 740
+> -- 40
+< -- 224
++ -- 545
+- -- 56
+* -- 720
+:= -- 823
+add.period$ -- 43
+call.type$ -- 12
+change.case$ -- 151
+chr.to.int$ -- 36
+cite$ -- 12
+duplicate$ -- 1127
+empty$ -- 599
+format.name$ -- 206
+if$ -- 1733
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 27
+num.names$ -- 60
+pop$ -- 234
+preamble$ -- 1
+purify$ -- 12
+quote$ -- 0
+skip$ -- 447
+stack$ -- 0
+substring$ -- 400
+swap$ -- 852
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 78
+warning$ -- 0
+while$ -- 76
+width$ -- 0
+write$ -- 14
+(There were 2 error messages)

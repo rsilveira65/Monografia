@@ -1,0 +1,672 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.30)  16 APR 2015 05:01
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**tcc2.tex
+(./tcc2.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(./texufpel.cls
+
+
+ --------------------------------------------------
+ CLASSE texufpel
+ Formatação de Documentos LaTeX da UFPEL
+ --------------------------------------------------
+ Desenvolvida a partir da Classe IIUFRGS
+ por Marilton S. de Aguiar (marilton@inf.ufpel.edu.br)
+ --------------------------------------------------
+ Versão: 3/5/2014
+ --------------------------------------------------
+
+
+Document Class: texufpel 3/5/2014
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/03/24 3.9k The Babel package
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/03/24 3.9k Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+\l@brazilian = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count89
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+Package: chngcntr 2009/09/02 v1.0a change counter resetting
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count90
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count91
+\Gm@cntv=\count92
+\c@Gm@tempcnt=\count93
+\Gm@bindingoffset=\dimen104
+\Gm@wd@mp=\dimen105
+\Gm@odd@mp=\dimen106
+\Gm@even@mp=\dimen107
+\Gm@layoutwidth=\dimen108
+\Gm@layoutheight=\dimen109
+\Gm@layouthoffset=\dimen110
+\Gm@layoutvoffset=\dimen111
+\Gm@dimlist=\toks15
+)
+\c@ei@authorcount=\count94
+\c@ei@advisorcount=\count95
+\c@ei@coadvisorcount=\count96
+\c@ei@collaboratorcount=\count97
+\c@kwcounter=\count98
+\titlepagewinwidth=\skip45
+\titlepagewinheight=\skip46
+\titlepagewinvoffset=\skip47
+\ei@chapnumindent=\skip48
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2014/04/30 v1.2b Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2014/04/30 v1.2b Input encoding file
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(./tcc2.aux
+
+LaTeX Warning: Label `figura12' multiply defined.
+
+
+LaTeX Warning: Label `figura' multiply defined.
+
+
+LaTeX Warning: Label `figura16' multiply defined.
+
+
+LaTeX Warning: Label `figura18' multiply defined.
+
+)
+\openout1 = `tcc2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 23.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 23.
+\AtBeginShipoutBox=\box26
+
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count99
+\scratchdimen=\dimen114
+\scratchbox=\box27
+\nofMPsegments=\count100
+\nofMParguments=\count101
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count102
+\MPscratchDim=\dimen115
+\MPnumerator=\count103
+\makeMPintoPDFobject=\count104
+\everyMPtoPDFconversion=\toks19
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 702.78308pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 28.
+
+<ufpelw.pdf, id=1, 258.96838pt x 261.97874pt>
+File: ufpelw.pdf Graphic file (type pdf)
+ <use ufpelw.pdf>
+Package pdftex.def Info: ufpelw.pdf used on input line 28.
+(pdftex.def)             Requested size: 85.35826pt x 86.34932pt.
+ [1
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./ufpel
+w.pdf>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 28.
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 28--28
+[][] 
+ []
+
+[2] [2
+
+
+] [3
+
+] [4
+
+]
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <16> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 43.
+ [5
+
+] [6
+
+]
+Underfull \hbox (badness 1314) in paragraph at lines 65--67
+\OT1/phv/m/n/12 SILVEIRA, Ra-fael. \OT1/phv/b/n/12 De-sen-vol-vi-mento de uma S
+olu[][]ao para o Re-gis-tro de
+ []
+
+
+Underfull \hbox (badness 6477) in paragraph at lines 65--67
+\OT1/phv/b/n/12 Presen[]as e Con-trole de Acesso em Even-tos Acad[]emicos Uti-l
+i-zando
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+\OT1/phv/b/n/12 Palavras-chave: \OT1/phv/m/n/12 Palavrachave-um, palavrachave-d
+ois, palavrachave-tres,
+ []
+
+[7
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+ []
+
+[8
+
+
+] (./tcc2.lof)
+\tf@lof=\write3
+\openout3 = `tcc2.lof'.
+
+ [9
+
+] (./tcc2.lot)
+\tf@lot=\write4
+\openout4 = `tcc2.lot'.
+
+ [10
+
+] [11
+
+] (./tcc2.toc
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+ []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+ []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+ []  
+ []
+
+[12
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+ []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+ []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+ []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+ []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+ []  
+ []
+
+)
+\tf@toc=\write5
+\openout5 = `tcc2.toc'.
+
+ [13]
+Underfull \hbox (badness 1205) in paragraph at lines 107--108
+[]\OT1/phv/m/n/12 No XXIII Con-gresso de Inicia[][]ao Ci-ent[]^^Pfica (CIC) e X
+VI En-con-tro de P[]os-
+ []
+
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 109.
+
+Underfull \hbox (badness 1297) in paragraph at lines 109--110
+[]\OT1/phv/m/n/12 Visando so-lu-ci-o-nar es-ses pro-ble-mas, este tra-ba-lho de
+ con-clus[]ao de curso
+ []
+
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 114.
+[14
+
+] [15] [16] [17] <rfid.jpg, id=66, 437.38406pt x 211.54031pt>
+File: rfid.jpg Graphic file (type jpg)
+
+<use rfid.jpg>
+Package pdftex.def Info: rfid.jpg used on input line 174.
+(pdftex.def)             Requested size: 437.38298pt x 211.53978pt.
+ <tiposrfid.jpg, id=67, 764.8575pt x 578.16pt>
+File: tiposrfid.jpg Graphic file (type jpg)
+
+<use tiposrfid.jpg>
+Package pdftex.def Info: tiposrfid.jpg used on input line 185.
+(pdftex.def)             Requested size: 382.42781pt x 289.07928pt.
+ [18
+
+] [19 <./rfid.jpg> <./tiposrfid.jpg>]
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 193.
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsphv.fd
+File: omsphv.fd 
+)
+LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 193.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 211.
+ [20] [21]
+<iff.jpg, id=82, 149.05687pt x 225.84375pt>
+File: iff.jpg Graphic file (type jpg)
+ <use iff.jpg>
+Package pdftex.def Info: iff.jpg used on input line 249.
+(pdftex.def)             Requested size: 149.0565pt x 225.84319pt.
+ [22 <./iff.jpg>]
+<camadas.jpg, id=86, 258.9675pt x 188.705pt>
+File: camadas.jpg Graphic file (type jpg)
+ <use camadas.jpg>
+Package pdftex.def Info: camadas.jpg used on input line 274.
+(pdftex.def)             Requested size: 258.96684pt x 188.70453pt.
+ [23] [24 <./camadas.jpg>]
+Underfull \hbox (badness 2119) in paragraph at lines 304--304
+\OT1/phv/b/n/16 3 SISGE: UM SIS-TEMA PARA GEST[]AO DE EVEN-TOS
+ []
+
+<sistema.png, id=94, 445.665pt x 233.37187pt>
+File: sistema.png Graphic file (type png)
+ <use sistema.png>
+Package pdftex.def Info: sistema.png used on input line 312.
+(pdftex.def)             Requested size: 267.40106pt x 140.02419pt.
+ [25
+
+ <./sistema.png>] <diagramablocos.jpg, id=98, 630.85687pt x 450.9347pt>
+File: diagramablocos.jpg Graphic file (type jpg)
+
+<use diagramablocos.jpg>
+Package pdftex.def Info: diagramablocos.jpg used on input line 337.
+(pdftex.def)             Requested size: 315.42766pt x 225.4668pt.
+ [26 <./diagramablocos.jpg>]
+<tabela2.png, id=102, 499.11469pt x 377.91188pt>
+File: tabela2.png Graphic file (type png)
+ <use tabela2.png>
+Package pdftex.def Info: tabela2.png used on input line 351.
+(pdftex.def)             Requested size: 399.29228pt x 302.32991pt.
+ [27 <./tabela2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+
+ []
+
+<diagramacasouso.png, id=106, 540.51938pt x 369.63094pt>
+File: diagramacasouso.png Graphic file (type png)
+
+<use diagramacasouso.png>
+Package pdftex.def Info: diagramacasouso.png used on input line 368.
+(pdftex.def)             Requested size: 324.31412pt x 221.78026pt.
+
+<diagramacaso.png, id=107, 368.87813pt x 341.02406pt>
+File: diagramacaso.png Graphic file (type png)
+ <use diagramacaso.png>
+Package pdftex.def Info: diagramacaso.png used on input line 374.
+(pdftex.def)             Requested size: 258.21292pt x 238.71521pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
+
+ []
+
+[28 <./diagramacasouso.png>] <tela1.png, id=111, 1028.34187pt x 860.46469pt>
+File: tela1.png Graphic file (type png)
+
+<use tela1.png>
+Package pdftex.def Info: tela1.png used on input line 433.
+(pdftex.def)             Requested size: 411.32947pt x 344.17978pt.
+ [29 <./diagramacaso.png>] [30 <./tela1.png>]
+<diagramaseq1.png, id=121, 428.35031pt x 271.76532pt>
+File: diagramaseq1.png Graphic file (type png)
+ <use diagramaseq1.png>
+Package pdftex.def Info: diagramaseq1.png used on input line 462.
+(pdftex.def)             Requested size: 428.34926pt x 271.76465pt.
+
+<diagramabd.png, id=122, 666.99188pt x 350.05782pt>
+File: diagramabd.png Graphic file (type png)
+ <use diagramabd.png>
+Package pdftex.def Info: diagramabd.png used on input line 473.
+(pdftex.def)             Requested size: 466.89113pt x 245.03879pt.
+
+Overfull \hbox (11.64702pt too wide) in paragraph at lines 473--474
+ [][] 
+ []
+
+<apifluxograma.png, id=123, 521.95pt x 472.76625pt>
+File: apifluxograma.png Graphic file (type png)
+ <use apifluxograma.png>
+Package pdftex.def Info: apifluxograma.png used on input line 480.
+(pdftex.def)             Requested size: 365.3625pt x 330.93411pt.
+
+[31] [32 <./diagramaseq1.png> <./diagramabd.png>] [33 <./apifluxograma.png>]
+[34] [35
+
+] (./tcc2.bbl [36
+
+] [37
+
+]) [38] [39
+
+]
+
+Package natbib Warning: Citation `Cormen' on page 40 undefined on input line 56
+7.
+
+[40
+
+]
+File: ufpelw.pdf Graphic file (type pdf)
+ <use ufpelw.pdf>
+Package pdftex.def Info: ufpelw.pdf used on input line 570.
+(pdftex.def)             Requested size: 28.45274pt x 28.78177pt.
+
+Overfull \hbox (3.87083pt too wide) in paragraph at lines 570--570
+[][] 
+ []
+
+<ufpel.pdf, id=156, 254.3904pt x 251.0178pt>
+File: ufpel.pdf Graphic file (type pdf)
+ <use ufpel.pdf>
+Package pdftex.def Info: ufpel.pdf used on input line 570.
+(pdftex.def)             Requested size: 85.35826pt x 84.22649pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 570--570
+[][][] 
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 570--570
+[][][] 
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 570--570
+[][][] 
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 570--570
+[][][] 
+ []
+
+
+AED: lastpage setting LastPage
+[41
+
+ <./ufpel.pdf>]
+
+Package natbib Warning: There were undefined citations.
+
+(./tcc2.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3947 strings out of 493117
+ 55287 string characters out of 6135433
+ 140770 words of memory out of 5000000
+ 7308 multiletter control sequences out of 15000+600000
+ 21539 words of font info for 41 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 37i,14n,39p,620b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on tcc2.pdf (42 pages, 1007667 bytes).
+PDF statistics:
+ 185 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+
